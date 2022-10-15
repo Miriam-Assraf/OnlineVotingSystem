@@ -1,5 +1,4 @@
-![logo](images/logo.png)
-# OnlineVotingSystem
+# ![logo](images/logo.png) OnlineVotingSystem
 This project aims to solve up-to-date problems impeding the voting process from evolving to an online manner.<br>
 Online services are constantly growing, even for vulnerable processes, such as payment, leaving the traditional method behind.<br>
 
@@ -24,7 +23,7 @@ Another way privacy is provided is by accessing user’s webcam during the votin
 <br>
 The system was developed as a web-app using Django framework, written in both Python and JS, integrated with MySQL database (hosted in AWS servers) and the SMPC module, which was written in C++.<br>
  <br>
-![architecture](images/system architecture.png)
+![architecture](images/system_architecture.png)
 
 For further information check README files in Django webapp and SMPC packages.<br>
 For detailed information check our [project book](https://drive.google.com/file/d/1oNDx6N-JfiyGVEdFe_bm9phu35-I6psx/view?usp=sharing).
