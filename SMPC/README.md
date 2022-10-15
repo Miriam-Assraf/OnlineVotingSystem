@@ -1,4 +1,4 @@
-# SMPC
+# ![logo](../images/logo.png) SMPC
 A POC (i.e. Proof of Concept) for a simple half-adder for binary addition between two servers.<br>
 For a single computer, if a vote was casted to a candidate we add carry[0] = 1 to its count, else we add carry[0] = 0:<br>
 (i)	carry[i+1] = count[i] AND carry[i]<br>
