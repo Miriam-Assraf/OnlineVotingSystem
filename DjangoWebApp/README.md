@@ -74,30 +74,30 @@ Similarly to document recognition a vector of face image is saved to the databas
 For extracting the face from document image used yoloface face detector, after comparing 3 different detectors:<br>
 MTCNN, yoloface and mediapipe.<br>
 
-![detectors](images/detectors comparison.png)
+![detectors](images/detectors_comparison.png)
 <br><br>
 Number of faces detected in train data over the different detectors, when expected a single face to be detected.<br>
 
-![detections](images/document detections.png)
+![detections](images/detections_example.png)
 <span style="color: red">MTCNN</span>, <span style="color: green">yoloface</span> and <span style="color: blue">mediapipe</span> detection over a single image.<br><br>
 
 For face recognition used a pre-trained model from the deepface library. Initially, chose FaceNet512 as it reached the highest accuracy, but eventually used VGG-Face as FaceNet512 includes Lambda layers that are not compatible with JS.<br>
-![deepface](images/face rec comparison.png)
-https://github.com/serengil/deepface
+![deepface](images/deppface.png)<br>
+[Source: Deepface](https://github.com/serengil/deepface)
 <br><br>
 
 A custom dataset was created to test the face recognition model. As our goal is to recognize a face from the web-cam frame against frontal face images from documents, frontal face images and video frames (mostly from web-cam or phone camera) of celebrities was gathered from Google and YouTube, reaching a total of 1,023,403 images.<br>
 
 To check the hard cases, the data was grouped by similar celebrities:<br>
-![group](images/similar cluster.png)
+![group](images/similar_group.png)
 <br><br>
 Each identity includes image and video directories, with aligned and cropped images:<br>
-![faces](images/face images.png)
+![faces](images/faces.png)
 <br>
-![frames](images/facenet threshold.png.png)
+![frames](images/frames.png)
 <br><br>
 To define the threshold computed cosine distances, where negative image was chosen from similar identity.<br>
-![facenet](images/facenet threshold.png)![vgg](images/vgg threshold.png)
+![facenet](images/facenet_distances.png)![vgg](images/vgg_distances.png)
 <br>
 (i) FaceNet512 distances (ii) VGG-Face distances<br><br>
 
