@@ -1,4 +1,4 @@
-# Web-App
+# ![logo](../images/logo.png) Django Web-App
 <br>
 Our voting system was developed using Django framework and written both in Python and JS.<br>
 After comparing several web frameworks, we chose to use the Django for the following reasons:<br>
@@ -16,10 +16,10 @@ Django web application follows the MVT (i.e. Model-View-Template) architecture:<
 •	Template: Responsible for the design (UI components).<br>
 <br><br>
  
-![mvt](images/django.png.png)
-<br>
+![mvt](images/mvt.png)
+<br><br>
 ERD:<br>
-![erd](images/erd.png)
+![erd](images/erd.jpg)
 <br><br>
 
 
