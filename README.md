@@ -8,7 +8,7 @@ Online services are constantly growing, even for vulnerable processes, such as p
 <br><br>
 
 Online voting system would provide higher accessibility, logistical convenience and accelerate vote counting. 
-We terget three main issues online voting systems encounter - authentication, reliability and privacy.<br>
+We terget three main issues online voting systems encounter: authentication, reliability and privacy.<br>
 <br>
 The authentication process is done similarly to the traditional method and includes an unique code, document verification and face recognition.
 Each voter receives a voting note, including it's unique code for signing into the system, he is required to upload a valid document scan (Israeli ID/driving license/passport) which is first recognized by an SNN (i.e. Siamese Neural Network) and then verified by performing OCR (i.e. Optical Character Recognition) and computing text similarity by Levenshtein distance algorithm, against voter's data in DB. Finally face recognition is done by a VGG-Face model using the users webcam.<br>
